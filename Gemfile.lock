@@ -59,6 +59,7 @@ GEM
     ffi (1.17.0-arm-linux-gnu)
     ffi (1.17.0-arm-linux-musl)
     ffi (1.17.0-arm64-darwin)
+    ffi (1.17.0-x64-mingw-ucrt)
     ffi (1.17.0-x86-linux-gnu)
     ffi (1.17.0-x86-linux-musl)
     ffi (1.17.0-x86_64-darwin)
@@ -73,6 +74,9 @@ GEM
       bigdecimal
       rake (>= 13)
     google-protobuf (4.29.1-arm64-darwin)
+      bigdecimal
+      rake (>= 13)
+    google-protobuf (4.29.1-x64-mingw-ucrt)
       bigdecimal
       rake (>= 13)
     google-protobuf (4.29.1-x86-linux)
@@ -119,8 +123,6 @@ GEM
     jekyll-get-json (1.0.0)
       deep_merge (~> 1.2)
       jekyll (>= 3.0)
-    jekyll-imagemagick (1.4.0)
-      jekyll (>= 3.4)
     jekyll-jupyter-notebook (0.0.6)
       jekyll
     jekyll-link-attributes (1.0.1)
@@ -184,12 +186,15 @@ GEM
       racc (~> 1.4)
     nokogiri (1.17.1-arm64-darwin)
       racc (~> 1.4)
+    nokogiri (1.17.1-x64-mingw-ucrt)
+      racc (~> 1.4)
     nokogiri (1.17.1-x86-linux)
       racc (~> 1.4)
     nokogiri (1.17.1-x86_64-darwin)
       racc (~> 1.4)
     nokogiri (1.17.1-x86_64-linux)
       racc (~> 1.4)
+    observer (0.1.2)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (6.0.1)
@@ -210,6 +215,8 @@ GEM
     sass-embedded (1.82.0-arm-linux-musleabihf)
       google-protobuf (~> 4.28)
     sass-embedded (1.82.0-arm64-darwin)
+      google-protobuf (~> 4.28)
+    sass-embedded (1.82.0-x64-mingw-ucrt)
       google-protobuf (~> 4.28)
     sass-embedded (1.82.0-x86-linux-gnu)
       google-protobuf (~> 4.28)
@@ -244,6 +251,7 @@ PLATFORMS
   arm-linux-musl
   arm-linux-musleabihf
   arm64-darwin
+  x64-mingw-ucrt
   x86-linux
   x86-linux-gnu
   x86-linux-musl
@@ -261,7 +269,6 @@ DEPENDENCIES
   jekyll-email-protect
   jekyll-feed
   jekyll-get-json
-  jekyll-imagemagick
   jekyll-jupyter-notebook
   jekyll-link-attributes
   jekyll-minifier
@@ -273,6 +280,7 @@ DEPENDENCIES
   jekyll-toc
   jekyll-twitter-plugin
   jemoji
+  observer
   unicode_utils
   webrick
 

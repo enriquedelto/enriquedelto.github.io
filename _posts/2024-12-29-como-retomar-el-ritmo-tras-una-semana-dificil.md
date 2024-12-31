@@ -2,7 +2,9 @@
 layout: post
 title: Cómo Retomar el Ritmo Tras una Semana Difícil
 date: 2024-12-29 15:51 +0000
+description: Reflexión sobre afrontar adversidades con serenidad y crear un propósito personal que trascienda la existencia.
 tags: Filosofía Reflexión_Personal
+categories: Diario
 ---
 
 ### Enfrentando una Semana Difícil

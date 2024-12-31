@@ -11,7 +11,7 @@ profile:
   more_info: >
     <p>Arucas<br>Canarias<br></p>
 news: true # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
@@ -26,7 +26,3 @@ Posteriormente, realicé un **Ciclo Medio de Emergencias Sanitarias**, que me br
 
 ### ¿Por qué esta web?
 Esta página web es mi ventana al mundo: un espacio donde comparto reflexiones personales, muestro mis avances profesionales y académicos, y animo a cualquiera que pase por aquí a **celebrar cada logro**, por pequeño que parezca. Mi intención es inspirar a otros a perseverar y a mantener viva la curiosidad.
-
-### Idiomas
-- **Español**: Nativo  
-- **Inglés**: B2 (overall), con C1 en listening y reading

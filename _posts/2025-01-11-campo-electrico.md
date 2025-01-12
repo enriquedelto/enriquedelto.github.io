@@ -1,13 +1,12 @@
 ---
-layout: distill
+layout: post
 title: "Campo Eléctrico"
 description: "Introducción al estudio del campo eléctrico y sus aplicaciones en ingeniería"
 tags: [Electromagnetismo, Ingeniería, Fuerza de Lorentz, Biot-Savart, Ampère]
 date: 2025-01-11
 featured: false
-giscus_comments: true
-
 tabs: true
+giscus_comments: true
 
 images:
   compare: true
@@ -75,7 +74,7 @@ Donde:
 
 {% tabs prompts %}
 
-    {% tab prompts prompt-1 %}
+{% tab prompts prompt-1 %}
 
 Eres un profesor de física que desea crear problemas para estudiantes de nivel introductorio al electromagnetismo. Genera un ejercicio paso a paso en el que:
 1. Se presenten **dos cargas puntuales** con valores al azar (en coulombs).
@@ -83,43 +82,43 @@ Eres un profesor de física que desea crear problemas para estudiantes de nivel 
 3. Se pregunte por la **magnitud** de la fuerza y si la fuerza es **atractiva** o **repulsiva**.
 4. Se pida analizar qué ocurre si se **duplica** la distancia entre las cargas o si se **duplica** alguna de las cargas.
 
-    {% endtab %}
+{% endtab %}
 
-    {% tab prompts prompt-2 %}
+{% tab prompts prompt-2 %}
 
 Inventa un problema con **dos cargas puntuales**, donde una tenga un valor positivo y la otra negativo, ambas generadas aleatoriamente. Plantea preguntas como:
 - Calcular la fuerza electrostática entre ellas a una distancia específica.
 - Determinar la nueva fuerza cuando se varía la distancia a la mitad o al triple de la original.
 - Discutir la implicación de cambiar el signo de una de las cargas.
 
-    {% endtab %}
+{% endtab %}
 
-    {% tab prompts prompt-3 %}
+{% tab prompts prompt-3 %}
 
 Crea un ejercicio de **tres cargas puntuales** dispuestas sobre una **misma línea** (eje x). Cada una tendrá un valor aleatorio (positivo o negativo) y se indicarán sus posiciones (aleatoriamente dentro de un rango, por ejemplo, entre 0 y 5 metros).
 1. Solicita al estudiante **dibujar** un diagrama con las tres cargas.
 2. Pregunta por la **fuerza resultante** sobre una de las cargas (la del centro, por ejemplo).
 3. Pide un breve análisis conceptual sobre **cómo se combinaron** las fuerzas parciales para hallar la **fuerza neta**.
 
-    {% endtab %}
+{% endtab %}
 
-    {% tab prompts prompt-4 %}
+{% tab prompts prompt-4 %}
 
 Eres un profesor que desea comparar distintos casos rápidamente. Genera un ejercicio donde:
 - Propones **cuatro escenarios** distintos, cada uno con **valores diferentes de cargas** y **distancias**.
 - Pides que el estudiante **ordene** las magnitudes de las fuerzas de mayor a menor, y explique **por qué**.
 - Incluye al menos un caso en que las fuerzas sean **atractivas** y otro en que sean **repulsivas**.
 
-    {% endtab %}
+{% endtab %}
 
-    {% tab prompts prompt-5 %}
+{% tab prompts prompt-5 %}
 
 Inventa un problema enfocado más en la **explicación conceptual** que en el cálculo numérico. Por ejemplo:
 - Se dan dos cargas con valores distintos (aleatorios).
 - Se pide al estudiante describir **por qué** la interacción es de repulsión o atracción basándose en los **signos** de las cargas.
 - Se pregunta de qué modo se vería afectada la interacción si se **introduce un medio dieléctrico** entre las cargas (por ejemplo, agua o aire con constante dieléctrica diferente).
 
-    {% endtab %}
+{% endtab %}
 
 {% endtabs %}
 

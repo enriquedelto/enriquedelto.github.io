@@ -1,5 +1,5 @@
 ---
-layout: distill
+layout: post
 title: "La unidad aritmético lógica (ALU)"
 description:
 tags: [TAG1, TAG2, ...]

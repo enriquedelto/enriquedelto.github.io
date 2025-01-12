@@ -1,5 +1,5 @@
 ---
-layout: distill
+layout: post
 title: "Campo Magnético"
 description: "Introducción al estudio del campo magnético y sus aplicaciones en ingeniería"
 tags: [Electromagnetismo, Ingeniería, Fuerza de Lorentz, Biot-Savart, Ampère]

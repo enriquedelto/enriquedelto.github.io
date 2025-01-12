@@ -7,7 +7,7 @@ date: 2025-01-11
 featured: false
 tabs: true
 giscus_comments: true
-thumbnail: assets\img\ffi\pexels-photo-414860.webp
+thumbnail: assets/img/ffi/pexels-photo-414860.webp
 
 images:
   compare: true
@@ -73,9 +73,9 @@ Donde:
     </div>
 </div>
 
-{% tabs prompts %}
+{% tabs prompts_carga_y_fuerza %}
 
-{% tab prompts prompt-1 %}
+{% tab prompts_carga_y_fuerza prompt-1 %}
 
 Eres un profesor de física que desea crear problemas para estudiantes de nivel introductorio al electromagnetismo. Genera un ejercicio paso a paso en el que:
 1. Se presenten **dos cargas puntuales** con valores al azar (en coulombs).
@@ -85,7 +85,7 @@ Eres un profesor de física que desea crear problemas para estudiantes de nivel 
 
 {% endtab %}
 
-{% tab prompts prompt-2 %}
+{% tab prompts_carga_y_fuerza prompt-2 %}
 
 Inventa un problema con **dos cargas puntuales**, donde una tenga un valor positivo y la otra negativo, ambas generadas aleatoriamente. Plantea preguntas como:
 - Calcular la fuerza electrostática entre ellas a una distancia específica.
@@ -94,7 +94,7 @@ Inventa un problema con **dos cargas puntuales**, donde una tenga un valor posit
 
 {% endtab %}
 
-{% tab prompts prompt-3 %}
+{% tab prompts_carga_y_fuerza prompt-3 %}
 
 Crea un ejercicio de **tres cargas puntuales** dispuestas sobre una **misma línea** (eje x). Cada una tendrá un valor aleatorio (positivo o negativo) y se indicarán sus posiciones (aleatoriamente dentro de un rango, por ejemplo, entre 0 y 5 metros).
 1. Solicita al estudiante **dibujar** un diagrama con las tres cargas.
@@ -103,7 +103,7 @@ Crea un ejercicio de **tres cargas puntuales** dispuestas sobre una **misma lín
 
 {% endtab %}
 
-{% tab prompts prompt-4 %}
+{% tab prompts_carga_y_fuerza prompt-4 %}
 
 Eres un profesor que desea comparar distintos casos rápidamente. Genera un ejercicio donde:
 - Propones **cuatro escenarios** distintos, cada uno con **valores diferentes de cargas** y **distancias**.
@@ -112,7 +112,7 @@ Eres un profesor que desea comparar distintos casos rápidamente. Genera un ejer
 
 {% endtab %}
 
-{% tab prompts prompt-5 %}
+{% tab prompts_carga_y_fuerza prompt-5 %}
 
 Inventa un problema enfocado más en la **explicación conceptual** que en el cálculo numérico. Por ejemplo:
 - Se dan dos cargas con valores distintos (aleatorios).
@@ -186,41 +186,28 @@ El **vector unitario** $$\hat{r}_i$$ es un vector con magnitud igual a uno que i
     </div>
 </div>
 
-{% tabs prompts %}
+{% tabs prompts_cargas_discretas %}
 
-    {% tab prompts prompt-1 %}
+{% tab prompts_cargas_discretas prompt-1 %}
 Eres un profesor de física que quiere reforzar el uso de **sumas vectoriales** del campo eléctrico. Genera un ejercicio donde:
-1. Se indican **dos cargas puntuales** en un plano (con coordenadas $$(x_1, y_1)$$ y $$(x_2, y_2)$$), cada una con valores aleatorios de carga (positivos o negativos).  
-2. Se pide al estudiante **calcular** el vector campo eléctrico neto en un **punto de observación** específico (por ejemplo, $$(x_0, y_0)$$) mostrando paso a paso la **suma vectorial**.  
+1. Se indican **dos cargas puntuales** en un plano (con coordenadas (x_1, y_1) y (x_2, y_2)), cada una con valores aleatorios de carga (positivos o negativos).  
+2. Se pide al estudiante **calcular** el vector campo eléctrico neto en un **punto de observación** específico (por ejemplo, (x_0, y_0)) mostrando paso a paso la **suma vectorial**.  
 3. Se solicita explicar **cómo** se determinan la **dirección** y la **magnitud** resultante.
-    {% endtab %}
+{% endtab %}
 
-    {% tab prompts prompt-2 %}
+{% tab prompts_cargas_discretas prompt-2 %}
 Crea un problema con **tres cargas puntuales** ubicadas en puntos aleatorios del plano (por ejemplo, dentro de un cuadrado de lado 10 metros). Cada carga tendrá magnitud y signo aleatorios. 
 - Pide calcular el **campo eléctrico total** en un punto de interés (por ejemplo, el **centro** del cuadrado).  
 - Solicita al estudiante **trazar** un diagrama vectorial esquemático que muestre las contribuciones individuales de cada carga.
 - Incluye un **análisis** sobre qué ocurriría si una de las cargas **cambiara** de signo.
-    {% endtab %}
+{% endtab %}
 
-    {% tab prompts prompt-3 %}
+{% tab prompts_cargas_discretas prompt-3 %}
 Genera un ejercicio en el que existan **cuatro cargas puntuales**, dispuestas a los **vértices de un rectángulo** con dimensiones al azar (por ejemplo, ancho 2 a 6 m, alto 1 a 4 m). Cada carga tendrá un valor de carga aleatorio (positivo o negativo).  
 1. Indica la **posición** de cada carga.  
 2. Pide que el alumno calcule el **campo eléctrico resultante** en el **centro** del rectángulo.  
 3. Solicita un breve **comentario** sobre si existe alguna **simetría** que facilite o complejice el cálculo.
-    {% endtab %}
-
-    {% tab prompts prompt-4 %}
-Eres un profesor que desea ilustrar la diferencia entre **configuraciones lineales y bidimensionales**. Genera dos ejercicios:
-1. **Lineal**: Tres cargas ubicadas en el eje $$x$$, con coordenadas aleatorias y magnitudes de carga distintas. Se pide calcular y comparar el campo en un punto en el mismo eje.
-2. **Bidimensional**: Dos cargas en el plano, con un punto de observación que NO se encuentre sobre la línea que une las cargas. Haz que el ejercicio requiera **sumar vectores** de manera explícita.
-    {% endtab %}
-
-    {% tab prompts prompt-5 %}
-Crea un problema con un **polígono regular** (por ejemplo, un **triángulo equilátero** o un **cuadrado**) en cuyos vértices se ubican cargas de diferentes valores. Luego:
-- Pide calcular el **campo resultante** en el **centro geométrico** del polígono.
-- Haz que una o más de las cargas puedan ser negativas, de forma aleatoria.
-- Solicita al estudiante **discutir** si el resultado sería **nulo** o no, y **por qué**, teniendo en cuenta los valores asignados.
-    {% endtab %}
+{% endtab %}
 
 {% endtabs %}
 
@@ -276,59 +263,59 @@ donde:
     </div>
 </div>
 
-{% tabs prompts %}
+{% tabs prompts_campo_electrico %}
 
-{% tab prompts prompt-1 %}
+{% tab prompts_campo_electrico prompt-1 %}
 
 Eres un profesor de física que desea reforzar el cálculo del **campo eléctrico generado por un plano infinito cargado**. Genera un ejercicio donde:
-1. Se indique una **densidad superficial de carga** $$\sigma$$ (en C/m²) sobre un plano infinito.
+1. Se indique una **densidad superficial de carga** \sigma (en C/m²) sobre un plano infinito.
 2. Se pida al estudiante **calcular** el campo eléctrico en un punto cercano al plano, especificando que debe considerar la dirección y magnitud del campo.
 3. Solicita al estudiante **analizar** qué ocurriría si la densidad superficial de carga se duplica y cómo afecta esto al campo eléctrico.
 
 {% endtab %}
 
-{% tab prompts prompt-2 %}
+{% tab prompts_campo_electrico prompt-2 %}
 
 Crea un problema sobre el **campo eléctrico en el eje de un disco cargado**. El ejercicio debe:
-- Especificar un **disco circular** con radio $$R$$ y **densidad superficial de carga** $$\sigma$$.
-- Pedir al estudiante que **calcule** el campo eléctrico en un punto a una distancia $$z$$ sobre el eje del disco, utilizando la fórmula:
+- Especificar un **disco circular** con radio R y **densidad superficial de carga** \sigma.
+- Pedir al estudiante que **calcule** el campo eléctrico en un punto a una distancia z sobre el eje del disco, utilizando la fórmula:
   
-  $$E_z = \frac{\sigma}{2 \epsilon_0} \left( 1 - \frac{z}{\sqrt{z^2 + R^2}} \right)$$
+  E_z = \frac{\sigma}{2 \epsilon_0} \left( 1 - \frac{z}{\sqrt{z^2 + R^2}} \right)
   
-- Solicitar al estudiante que **interprete** el comportamiento del campo eléctrico cuando $$z$$ tiende a cero y cuando $$z$$ tiende a infinito.
+- Solicitar al estudiante que **interprete** el comportamiento del campo eléctrico cuando z tiende a cero y cuando z tiende a infinito.
 
 {% endtab %}
 
-{% tab prompts prompt-3 %}
+{% tab prompts_campo_electrico prompt-3 %}
 
 Genera un ejercicio sobre el **campo eléctrico generado por un anillo cargado**. El problema debe:
-1. Indicar un **anillo circular** de radio $$R$$ con **densidad lineal de carga** $$\lambda$$.
-2. Pedir al estudiante que **calcule** el campo eléctrico en un punto a una distancia $$z$$ sobre el eje del anillo, utilizando la fórmula:
+1. Indicar un **anillo circular** de radio R con **densidad lineal de carga** \lambda.
+2. Pedir al estudiante que **calcule** el campo eléctrico en un punto a una distancia z sobre el eje del anillo, utilizando la fórmula:
    
-   $$E_z = \frac{k_e q z}{(z^2 + R^2)^{3/2}}$$
+   E_z = \frac{k_e q z}{(z^2 + R^2)^{3/2}}
    
-   donde $$q = \lambda \cdot 2\pi R$$.
+   donde q = \lambda \cdot 2\pi R.
 3. Solicitar al estudiante que **explique** cómo varía el campo eléctrico cuando:
    - El radio del anillo se duplica.
    - La densidad lineal de carga se reduce a la mitad.
 
 {% endtab %}
 
-{% tab prompts prompt-4 %}
+{% tab prompts_campo_electrico prompt-4 %}
 
 Crea un problema que involucre el cálculo del **campo eléctrico producido por un segmento cargado rectilíneo**. El ejercicio debe:
-- Especificar un **segmento de longitud** $$L$$ con **densidad lineal de carga** $$\lambda$$, ubicado a lo largo del eje $$x$$ desde $$x = -\frac{L}{2}$$ hasta $$x = \frac{L}{2}$$.
-- Pedir al estudiante que **calcule** el campo eléctrico en un punto ubicado a una distancia $$y$$ sobre el eje $$y$$.
+- Especificar un **segmento de longitud** L con **densidad lineal de carga** \lambda, ubicado a lo largo del eje x desde x = -\frac{L}{2} hasta x = \frac{L}{2}.
+- Pedir al estudiante que **calcule** el campo eléctrico en un punto ubicado a una distancia y sobre el eje y.
 - Solicitar un **análisis** sobre cómo el campo eléctrico cambia si:
   - La longitud del segmento se incrementa.
   - La densidad lineal de carga se invierte en signo.
 
 {% endtab %}
 
-{% tab prompts prompt-5 %}
+{% tab prompts_campo_electrico prompt-5 %}
 
 Diseña un ejercicio sobre el **campo eléctrico en el centro geométrico de un polígono regular cargado**. El problema debe:
-1. Indicar un **polígono regular** (por ejemplo, un **triángulo equilátero** o un **cuadrado**) con **cargas** $$q_i$$ ubicadas en cada vértice.
+1. Indicar un **polígono regular** (por ejemplo, un **triángulo equilátero** o un **cuadrado**) con **cargas** q_i ubicadas en cada vértice.
 2. Pedir al estudiante que **calcule** el campo eléctrico resultante en el **centro geométrico** del polígono, considerando que las cargas pueden ser positivas o negativas.
 3. Solicitar al estudiante que **discuta** bajo qué condiciones el campo eléctrico en el centro sería **nulo**, y **por qué**, basándose en la simetría y los valores de las cargas.
 
@@ -376,38 +363,38 @@ La utilidad principal de la Ley de Gauss radica en su capacidad para simplificar
     </div>
 </div>
 
-{% tabs prompts %}
+{% tabs prompts_gauss %}
 
-{% tab prompts prompt-1 %}
+{% tab prompts_gauss prompt-1 %}
 
 Eres un profesor de física que desea reforzar la **aplicación de la Ley de Gauss para una esfera cargada**. Genera un ejercicio donde:
-1. Se indique una **esfera de radio** $$R$$ con **carga total** $$Q$$ distribuida uniformemente.
-2. Se pida al estudiante **calcular** el campo eléctrico en un punto **dentro** de la esfera ($$r < R$$) y en un punto **fuera** de la esfera ($$r > R$$), utilizando la Ley de Gauss.
+1. Se indique una **esfera de radio** R con **carga total** Q distribuida uniformemente.
+2. Se pida al estudiante **calcular** el campo eléctrico en un punto **dentro** de la esfera (r < R) y en un punto **fuera** de la esfera (r > R), utilizando la Ley de Gauss.
 3. Solicita al estudiante **explicar** por qué el campo eléctrico dentro de la esfera varía con la distancia mientras que fuera es equivalente al de una carga puntual.
 
 {% endtab %}
 
-{% tab prompts prompt-2 %}
+{% tab prompts_gauss prompt-2 %}
 
 Crea un problema sobre el **campo eléctrico alrededor de un cilindro infinito cargado**. El ejercicio debe:
-- Especificar un **cilindro de radio** $$R$$ con **densidad lineal de carga** $$\lambda$$.
-- Pedir al estudiante que **calcule** el campo eléctrico a una distancia $$r$$ del eje del cilindro, considerando los casos:
-  - $$r < R$$ (dentro del cilindro).
-  - $$r > R$$ (fuera del cilindro).
+- Especificar un **cilindro de radio** R con **densidad lineal de carga** \lambda.
+- Pedir al estudiante que **calcule** el campo eléctrico a una distancia r del eje del cilindro, considerando los casos:
+  - r < R (dentro del cilindro).
+  - r > R (fuera del cilindro).
 - Solicitar al estudiante que **analice** cómo el campo eléctrico cambia si la densidad lineal de carga se duplica.
 
 {% endtab %}
 
-{% tab prompts prompt-3 %}
+{% tab prompts_gauss prompt-3 %}
 
 Genera un ejercicio sobre el **campo eléctrico generado por una placa plana infinita cargada**. El problema debe:
-1. Indicar una **placa infinita** con **densidad superficial de carga** $$\sigma$$.
-2. Pedir al estudiante que **calcule** el campo eléctrico a una distancia $$d$$ de la placa, utilizando la Ley de Gauss.
-3. Solicitar al estudiante que **explique** por qué el campo eléctrico es **constante** y **perpendicular** a la placa, independientemente de la distancia $$d$$.
+1. Indicar una **placa infinita** con **densidad superficial de carga** \sigma.
+2. Pedir al estudiante que **calcule** el campo eléctrico a una distancia d de la placa, utilizando la Ley de Gauss.
+3. Solicitar al estudiante que **explique** por qué el campo eléctrico es **constante** y **perpendicular** a la placa, independientemente de la distancia d.
 
 {% endtab %}
 
-{% tab prompts prompt-4 %}
+{% tab prompts_gauss prompt-4 %}
 
 Crea un problema que involucre la **selección de una superficie gaussiana adecuada**. El ejercicio debe:
 - Presentar una **configuración** con una **esfera cargada** y un **cilindro cargado**.
@@ -416,7 +403,7 @@ Crea un problema que involucre la **selección de una superficie gaussiana adecu
 
 {% endtab %}
 
-{% tab prompts prompt-5 %}
+{% tab prompts_gauss prompt-5 %}
 
 Diseña un ejercicio que combine **Ley de Gauss y superposición de campos eléctricos**. El problema debe:
 1. Indicar una **combinación** de una **esfera cargada** y un **cilindro cargado** con diferentes densidades de carga.
@@ -450,12 +437,12 @@ Los aislantes, en contraste, no permiten el libre movimiento de cargas en su int
     </div>
 </div>
 
-{% tabs prompts %}
+{% tabs prompts_conductores_y_aislantes %}
 
-{% tab prompts prompt-1 %}
+{% tab prompts_conductores_y_aislantes prompt-1 %}
 
 Eres un profesor de física que desea reforzar la comprensión de las **propiedades de los conductores en equilibrio electrostático**. Genera un ejercicio donde:
-1. Se presente un **conductor esférico** cargado con una carga total $$Q$$.
+1. Se presente un **conductor esférico** cargado con una carga total Q.
 2. Se pida al estudiante que **determinar**:
    - La **distribución de carga** en el conductor.
    - El **campo eléctrico** tanto **dentro** como **fuera** del conductor.
@@ -463,7 +450,7 @@ Eres un profesor de física que desea reforzar la comprensión de las **propieda
 
 {% endtab %}
 
-{% tab prompts prompt-2 %}
+{% tab prompts_conductores_y_aislantes prompt-2 %}
 
 Crea un problema que compare **conductores y aislantes** en presencia de un campo eléctrico externo. El ejercicio debe:
 1. Presentar una **varilla conductora** y una **varilla aislante** de la misma forma y tamaño, colocadas en un campo eléctrico uniforme.
@@ -473,39 +460,39 @@ Crea un problema que compare **conductores y aislantes** en presencia de un camp
 
 {% endtab %}
 
-{% tab prompts prompt-3 %}
+{% tab prompts_conductores_y_aislantes prompt-3 %}
 
 Genera un ejercicio sobre la **polarización de un aislante**. El problema debe:
-1. Indicar un **material aislante** colocado en un campo eléctrico externo $$\vec{E}$$.
+1. Indicar un **material aislante** colocado en un campo eléctrico externo \vec{E}.
 2. Pedir al estudiante que **explique** el proceso de **polarización** molecular en el aislante.
-3. Solicitar que el estudiante **calcule** el campo eléctrico resultante dentro del aislante, considerando la constante dieléctrica $$\epsilon$$ del material.
+3. Solicitar que el estudiante **calcule** el campo eléctrico resultante dentro del aislante, considerando la constante dieléctrica \epsilon del material.
 4. Pedir al estudiante que **discuta** cómo la polarización afecta la interacción del material con cargas externas.
 
 {% endtab %}
 
-{% tab prompts prompt-4 %}
+{% tab prompts_conductores_y_aislantes prompt-4 %}
 
 Diseña un ejercicio que involucre el uso de un **condensador con dieléctrico**. El problema debe:
-1. Presentar un **condensador de placas paralelas** con área $$A$$ y separación $$d$$, insertando un **material aislante** con constante dieléctrica $$\kappa$$ entre las placas.
+1. Presentar un **condensador de placas paralelas** con área A y separación d, insertando un **material aislante** con constante dieléctrica \kappa entre las placas.
 2. Pedir al estudiante que **calcule** la **capacitancia** del condensador antes y después de insertar el dieléctrico.
 3. Solicitar que el estudiante **explique** cómo el dieléctrico afecta el campo eléctrico entre las placas y la **energía almacenada** en el condensador.
 4. Preguntar sobre las **aplicaciones prácticas** de los dieléctricos en dispositivos electrónicos.
 
 {% endtab %}
 
-{% tab prompts prompt-5 %}
+{% tab prompts_conductores_y_aislantes prompt-5 %}
 
 Crea un problema que explore la **distribución de cargas en un conductor en presencia de cargas externas**. El ejercicio debe:
-1. Indicar una **concha conductora hueca** con radio externo $$R$$, colocada en un campo eléctrico externo uniforme $$\vec{E}$$.
-2. Colocar una **carga puntual** $$q$$ en el interior hueco de la concha.
+1. Indicar una **concha conductora hueca** con radio externo R, colocada en un campo eléctrico externo uniforme \vec{E}.
+2. Colocar una **carga puntual** q en el interior hueco de la concha.
 3. Pedir al estudiante que **determine**:
    - La **distribución de carga** en la superficie interna y externa de la concha.
    - El **campo eléctrico** dentro y fuera de la concha.
-4. Solicitar al estudiante que **explique** cómo la presencia de la carga interna $$q$$ influye en la distribución de las cargas en la concha y en el campo eléctrico resultante.
+4. Solicitar al estudiante que **explique** cómo la presencia de la carga interna q influye en la distribución de las cargas en la concha y en el campo eléctrico resultante.
 
 {% endtab %}
 
-{% tab prompts prompt-6 %}
+{% tab prompts_conductores_y_aislantes prompt-6 %}
 
 Genera un ejercicio que contraste el comportamiento de **conductores y aislantes en un circuito eléctrico**. El problema debe:
 1. Presentar un **circuito simple** que incluya tanto **componentes conductores** (como alambres) como **componentes aislantes** (como plásticos o cerámicas).

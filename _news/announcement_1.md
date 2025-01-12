@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Top picks musicales de diciembre: [Almost nothing](https://youtu.be/3vO71Qh7WI0) y [Asylums for the feeling](https://youtu.be/QMA_dKGIO30)
+Top picks musicales de enero: [Röyksopp - Remind Me (Radio Edit)](https://youtu.be/-2Sh9PpGb1k) y [Yellow Magic - Tong Poo](https://youtu.be/2T7TXVtGGFc)

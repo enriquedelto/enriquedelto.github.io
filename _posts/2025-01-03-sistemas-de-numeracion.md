@@ -1,11 +1,11 @@
 ---
 layout: distill
-title: "La información y los sistemas de numeración en computación"
-description: "Introducción a sistemas de numeración"
+title: "La unidad aritmético lógica (ALU)"
+description:
 tags: [TAG1, TAG2, ...]
 giscus_comments: true
 date: 2025-01-03
-featured: true
+featured: false
 
 mermaid:
   enabled: true

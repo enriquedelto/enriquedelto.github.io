@@ -7,6 +7,8 @@ date: 2025-01-11
 featured: false
 giscus_comments: true
 
+tabs: true
+
 images:
   compare: true
   slider: true
